@@ -17,7 +17,7 @@ namespace ApiClienteEasy.Services
             {
                 client.BaseAddress = new Uri(url);
 
-                HttpResponseMessage response = await client.GetAsync(url);
+                HttpResponseMessage response = await client.GetAsync(url).ConfigureAwait(false);
 
                 if (response.IsSuccessStatusCode)
                 {

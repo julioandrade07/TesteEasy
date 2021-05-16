@@ -1,9 +1,10 @@
 ﻿using ApiClienteEasy.Models.Data;
+using System.Threading.Tasks;
 
 namespace ApiClienteEasy.Services
 {
     public interface ICliente
     {
-        ClientePosicao GetCliente(int ClientId);
+        Task<ClientePosicao> GetCliente(int ClientId);
     }
 }

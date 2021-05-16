@@ -23,7 +23,7 @@ namespace ApiClienteEasy.Services
         }
 
 
-        public ClientePosicao GetCliente(int ClientId)
+        public async Task<ClientePosicao> GetCliente(int ClientId)
         {
 
             List<Task> tasksManager = new List<Task>();
@@ -36,7 +36,7 @@ namespace ApiClienteEasy.Services
 
             tasksManager.AddRange(new List<Task>() { taskFundo, taskTeosuro, TaskRendaFixa });
 
-            Task.WhenAll(tasksManager);
+            await Task.WhenAll(tasksManager);
 
             return GerarPosicaoCliente(taskFundo.Result, taskTeosuro.Result, TaskRendaFixa.Result);
 

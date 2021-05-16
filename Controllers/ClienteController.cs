@@ -24,7 +24,7 @@ namespace WebApplication5.Controllers
         public ClienteResponse Consultar(int clientId)
         {
             var item = _repository.GetCliente(clientId);
-            return new ClienteResponse(item);
+            return new ClienteResponse(item.Result);
         }
     }
 }
