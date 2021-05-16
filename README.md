@@ -9,11 +9,13 @@
       <a href="#sobre-o-projeto">Sobre o Projeto</a>
       <ul>
         <li><a href="#como-executar">Como executar</a></li>
+        <li><a href="#porque-.net 5.0">Porque .NET 5.0 </a></li>
       </ul>
     </li>
     <li><a href="#tecnologias-implementadas-e-requisitos">Tecnologias implementadas</a></li>
     <li><a href="#cloud">Cloud</a></li>
-     <li><a href="#cloud-link">Cloud Link</a></li>
+    <li><a href="#cloud-link">Cloud Link</a></li>
+    <li><a href="#tempo-execução">Tempo Execução</a></li>
     <li><a href="#extra">Extra</a></li>
   </ol>
 </details>
@@ -70,6 +72,10 @@ Solução foi fazer a publicação em um ambiente Windows padrão(sem Container)
 
 ## Cloud Link
 Link Cloud : https://webapiazurejulio.azurewebsites.net/Cliente
+
+
+## Tempo Execução
++mkdsamkdmal
 
 
 ## Extra
