@@ -28,6 +28,12 @@ Nossos usuários têm custodia em vários tipos de investimentos, que vem de ser
 isso devemos consolidar estes dados e devolver para canais diversos
 ```
 
+## Como Executar
+
+Clonar projeto 
+Abrir Visual Staudio 2019 realizar docker build
+Abrir https://localhost:49159/swagger/index.html
+
 ## Tecnologias implementadas:
 
 - ASP.NET 5.0 (with .NET Core 5.0)
