@@ -38,10 +38,8 @@ isso devemos consolidar estes dados e devolver para canais diversos
 ## Tecnologias implementadas e requisitos:
 
 - ASP.NET 5.0 (with .NET Core 5.0)
-- ASP.NET MVC Core 
 - Swagger UI with JWT support
 - Docker
-- Linux
 
 
 ## Architecture:
