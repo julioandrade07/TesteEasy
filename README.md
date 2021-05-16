@@ -1,7 +1,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # Projeto de API Cliente - EasyInvest
-Projeto .net5.0 
 
 <details open="open">
   <summary>Table of Contents</summary>
@@ -60,6 +59,9 @@ Pela simplicidade do projeto e tempo de execução foi escolhido um arquitetura 
 
 
 ## Cloud 
+
+Primeira tentativa foi criar api Azure
+https://apnetdotnetsampleapilinux.azurewebsites.net/
 
 
 [linkedin-url]: https://www.linkedin.com/in/julio-andrade-0b740469/
