@@ -9,13 +9,12 @@
       <a href="#sobre-o-projeto">Sobre o Projeto</a>
       <ul>
         <li><a href="#como-executar">Como executar</a></li>
-        <li><a href="#porque-.net 5.0">Porque .NET 5.0 </a></li>
       </ul>
     </li>
     <li><a href="#tecnologias-implementadas-e-requisitos">Tecnologias implementadas</a></li>
     <li><a href="#cloud">Cloud</a></li>
-    <li><a href="#cloud-link">Cloud Link</a></li>
     <li><a href="#tempo-execução">Tempo Execução</a></li>
+    <li><a href="#asynchronous">Asynchronous</a></li>
     <li><a href="#extra">Extra</a></li>
   </ol>
 </details>
@@ -35,11 +34,12 @@ isso devemos consolidar estes dados e devolver para canais diversos
 
 + Clonar projeto repositorio git
 + Abrir Visual Staudio 2019 realizar docker build
-+ Apos build e publicação acessar o link https://localhost:49159/swagger/index.html
++ Apos build e publicação acessar o link https://localhost:49159/Cliente
++ Usar Swagger ou PostMan para teste 
 
 ## Tecnologias implementadas e requisitos:
 
-- ASP.NET 5.0 (with .NET Core 5.0)
+- ASP.NET Core 5.0 (with .NET 5.0)
 - Swagger UI with JWT support
 - Docker
 
@@ -70,12 +70,14 @@ Error: buildx call failed with: error: failed to solve: rpc error: code = Unknow
 
 Solução foi fazer a publicação em um ambiente Windows padrão(sem Container) na Azure
 
-## Cloud Link
 Link Cloud : https://webapiazurejulio.azurewebsites.net/Cliente
 
-
 ## Tempo Execução
-+mkdsamkdmal
+
+![alt text](https://github.com/julioandrade07/TesteEasy/blob/main/Imagem/EvidenciaPerformace.PNG?raw=true)
+
+## Asynchronous
+![alt text](https://github.com/julioandrade07/TesteEasy/blob/main/Imagem/EvidenciaPerformace_.PNG?raw=true)
 
 
 ## Extra
