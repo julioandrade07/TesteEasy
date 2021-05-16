@@ -7,20 +7,12 @@ namespace ApiClienteEasy.Models.Data
 {
     public class ClientePosicao
     {
-        public ClientePosicao() { 
-        
-        
+        public ClientePosicao() {
+
+            Investimentos = new List<Investimento>();
         }
 
-        public ClientePosicao(List<Fundos> fundos, List<TesouroDireto> tesouroDireto, List<RendaFixa> rendaFixa)
-        {
-            ValorTotal = 120;
-
-
-        }
-
-
-        public decimal ValorTotal { get; set; }
+        public decimal ValorTotal { get { return Investimentos.Sum(x => x.ValorTotal); }}
 
         public List<Investimento> Investimentos { get; set; }
 

@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApi.OutputCache.V2;
 
 namespace WebApplication5.Controllers
 {
@@ -25,10 +26,11 @@ namespace WebApplication5.Controllers
         
         }
 
+        //[CacheOutput(ServerTimeSpan = 86400)]
         [HttpPost]
         public ClienteResponse Consultar(int clientId) {
-            _repository.GetCliente(clientId);
-            return new ClienteResponse();
+            var item  =_repository.GetCliente(clientId);
+            return new ClienteResponse(item);
         }
     }
 }

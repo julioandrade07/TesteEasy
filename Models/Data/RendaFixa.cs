@@ -18,11 +18,8 @@ namespace ApiClienteEasy.Models.Data
 		public string indece { get; set; }
 		public string nome { get; set; }
 		public bool guarantidoFGC { get; set; }
-
 		public DateTime dataOperacao { get; set; }
-
 		public decimal precoUnitario { get; set; }
-
 		public bool primario { get; set; }
     }
 

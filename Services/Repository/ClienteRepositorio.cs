@@ -27,22 +27,37 @@ namespace ApiClienteEasy.Services
         public ClientePosicao GetCliente(int ClientId)
         {
 
-          List<Task> s = new List<Task>();
+          List<Task> tasksManager = new List<Task>();
 
-          Task<List<Fundos>> z =  _repositorioFundo.GetFundos(ClientId);
+          Task<List<Fundos>> taskFundo =  _repositorioFundo.GetFundos(ClientId);
 
-          Task<List<TesouroDireto>> b =  _repositorioTesouroDireto.GetTesouro(ClientId);
+          Task<List<TesouroDireto>> taskTeosuro =  _repositorioTesouroDireto.GetTesouro(ClientId);
 
-          Task<List<RendaFixa>> r =  _repositorioRendaFixa.GetRendaFixa(ClientId);
+          Task<List<RendaFixa>> TaskRendaFixa =  _repositorioRendaFixa.GetRendaFixa(ClientId);
 
+          tasksManager.AddRange(new List<Task>() { taskFundo, taskTeosuro, TaskRendaFixa });
 
-            s.Add(z);
+          Task.WhenAll(tasksManager);
 
-            Task.WhenAll(s);
-
-         
-            return new ClientePosicao(z.Result,b.Result,r.Result);
+          return GerarPosicaoCliente(taskFundo.Result, taskTeosuro.Result, TaskRendaFixa.Result);
         
+        }
+
+
+
+        public ClientePosicao GerarPosicaoCliente (List<Fundos> fundos, List<TesouroDireto> tesouroDireto, List<RendaFixa> rendaFixa)
+        {
+
+            var ret = new ClientePosicao();
+
+            ret.Investimentos.AddRange(fundos.Select(x => new Investimento(x)));
+
+            ret.Investimentos.AddRange(tesouroDireto.Select(x => new Investimento(x)));
+
+            ret.Investimentos.AddRange(rendaFixa.Select(x => new Investimento(x)));
+
+            return ret;
+
         }
     }
 }
