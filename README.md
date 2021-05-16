@@ -3,12 +3,12 @@
 # Projeto de API Cliente - EasyInvest
 
 <details open="open">
-  <summary>Table of Contents</summary>
+  <summary>Sumario</summary>
   <ol>
     <li>
       <a href="#sobre-o-projeto">Sobre o Projeto</a>
       <ul>
-        <li><a href="#built-with">Como executar</a></li>
+        <li><a href="#como-executar">Como executar</a></li>
       </ul>
     </li>
     <li><a href="#tecnologias-implementadas">Tecnologias implementadas</a></li>
