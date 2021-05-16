@@ -14,7 +14,7 @@
     <li><a href="#tecnologias-implementadas-e-requisitos">Tecnologias implementadas</a></li>
     <li><a href="#cloud">Cloud</a></li>
      <li><a href="#cloud-link">Cloud Link</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#extra">Extra</a></li>
   </ol>
 </details>
 
@@ -72,6 +72,10 @@ Solução foi fazer a publicação em um ambiente Windows padrão(sem Container)
 
 ## Cloud Link
 Link Cloud : https://webapiazurejulio.azurewebsites.net/Cliente
+
+
+## Extra
+Link projeto sem Docker (https://github.com/julioandrade07/TesteEasyAzure.git)
 
 
 [linkedin-url]: https://www.linkedin.com/in/julio-andrade-0b740469/
