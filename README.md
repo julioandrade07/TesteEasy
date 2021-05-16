@@ -6,23 +6,13 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#sobre-o-projeto">About The Project</a>
+      <a href="#sobre-o-projeto">Sobre o Projeto</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Como executar</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#tecnologias-implementadas">Tecnologias implementadas</a></li>
+    <li><a href="#cloud">Cloud</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -61,7 +51,7 @@ Pela simplicidade do projeto e tempo de execução foi escolhido um arquitetura 
 ## Cloud 
 
 Primeira tentativa foi criar api Azure
-https://apnetdotnetsampleapilinux.azurewebsites.net/
+http://api-julio-andrade.azurewebsites.net/swagger/index.html
 
 
 [linkedin-url]: https://www.linkedin.com/in/julio-andrade-0b740469/
