@@ -7,7 +7,7 @@ Projeto .net5.0
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#sobre-o-projeto">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -31,14 +31,35 @@ Projeto .net5.0
 <!--#about-the-project-->
 ## Sobre o projeto
 
+Projeto de teste de conhecimento para criar uma api em .NET utilizando as melhores práticas de desenvolvimento, para resolver o 
+problema a seguir: 
+
+```ruby
+Nossos usuários têm custodia em vários tipos de investimentos, que vem de serviços distintos, para
+isso devemos consolidar estes dados e devolver para canais diversos
+```
+
 ## Tecnologias implementadas:
 
 - ASP.NET 5.0 (with .NET Core 5.0)
- - ASP.NET MVC Core 
+- ASP.NET MVC Core 
 - Swagger UI with JWT support
+- Docker
+- Linux
 
 
 ## Architecture:
+
+Durante a análise do projeto 3 opções de arquitera me surgiram: 
+
++ Clean architecture
++ Monolithic
++ Arquitetura em Camadas 
+ 
+Pela simplicidade do projeto e tempo de execução foi escolhido um arquitetura monolitica, já o projeto tem poucas fronteiras.
+
+
+## Cloud 
 
 
 [linkedin-url]: https://www.linkedin.com/in/julio-andrade-0b740469/
