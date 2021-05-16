@@ -21,7 +21,7 @@
 <!--#about-the-project-->
 ## Sobre o projeto
 
-Projeto de teste de conhecimento para criar uma api em .NET utilizando as melhores práticas de desenvolvimento, para resolver o 
+Projeto de teste de conhecimento para criar uma api em .NET 5.0 utilizando as melhores práticas de desenvolvimento, para resolver o 
 problema a seguir: 
 
 ```ruby
@@ -52,7 +52,7 @@ Durante a análise do projeto 3 opções de arquitera me surgiram:
 + Monolithic
 + Arquitetura em Camadas 
  
-Pela simplicidade do projeto e tempo de execução foi escolhido um arquitetura monolitica, já o projeto tem poucas fronteiras.
+Pela simplicidade do projeto e tempo de execução foi escolhido uma arquitetura monolitica, já o projeto tem poucas fronteiras.
 
 
 ## Cloud 
