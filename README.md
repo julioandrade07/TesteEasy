@@ -11,8 +11,9 @@
         <li><a href="#como-executar">Como executar</a></li>
       </ul>
     </li>
-    <li><a href="#tecnologias-implementadas">Tecnologias implementadas</a></li>
+    <li><a href="#tecnologias-implementadas-e-requisitos">Tecnologias implementadas</a></li>
     <li><a href="#cloud">Cloud</a></li>
+     <li><a href="#cloud-link">Cloud Link</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -30,11 +31,11 @@ isso devemos consolidar estes dados e devolver para canais diversos
 
 ## Como Executar
 
-+ Clonar projeto reposiotiro git
++ Clonar projeto repositorio git
 + Abrir Visual Staudio 2019 realizar docker build
-+ Abrir https://localhost:49159/swagger/index.html
++ Apos build e publicação acessar o link https://localhost:49159/swagger/index.html
 
-## Tecnologias implementadas:
+## Tecnologias implementadas e requisitos:
 
 - ASP.NET 5.0 (with .NET Core 5.0)
 - ASP.NET MVC Core 
@@ -55,9 +56,22 @@ Pela simplicidade do projeto e tempo de execução foi escolhido um arquitetura 
 
 
 ## Cloud 
+Primeira tentativa foi criar WEB API na Azure com Docker em um Container Linux igual no ambiente local podem na 
+publicação Azure por causa do Container apresentava o seguinte erro:
 
-Primeira tentativa foi criar api Azure
-http://api-julio-andrade.azurewebsites.net/swagger/index.html
+> :warning: **#16 sha256:e8c613e07b0b7ff33893b694f7759a10d42e180f2b4dc349fb57dc6b71dcab00 <br />
+#16 exporting layers <br />
+#16 exporting layers 0.7s done <br />
+#16 exporting manifest sha256:1546627a14eef28144f59a9d2c012cc58ee6d0898426f9d781daccda09719452 done <br />
+#16 exporting config sha256:2d64152d42ec0c962c724c9e4575d93f3be96fc7b424b5870caeca7ff51033ef done <br />
+#16 ERROR: invalid reference format: repository name must be lowercase <br />
+error: failed to solve: rpc error: code = Unknown desc = invalid reference format: repository name must be lowercase <br />
+Error: buildx call failed with: error: failed to solve: rpc error: code = Unknown desc = invalid reference format: repository name must be lowercase <br />**
+
+Solução foi fazer a publicação em um ambiente Windows padrão(sem Container) na Azure
+
+## Cloud Link
+Link Cloud : https://webapiazurejulio.azurewebsites.net/Cliente
 
 
 [linkedin-url]: https://www.linkedin.com/in/julio-andrade-0b740469/
