@@ -1,0 +1,34 @@
+﻿using ApiClienteEasy.Models;
+using ApiClienteEasy.Models.Response;
+using ApiClienteEasy.Services;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace WebApplication5.Controllers
+{
+
+
+    [ApiController]
+    [Route("[controller]")]
+    public class ClienteController : ControllerBase
+    {
+        private ICliente _repository;
+        private IFundos _repositoryFundos;
+
+        public ClienteController(ICliente repository, IFundos repositoryFundos)
+        {
+            _repository = repository;
+            _repositoryFundos = repositoryFundos;
+        
+        }
+
+        [HttpPost]
+        public ClienteResponse Consultar(int clientId) {
+            _repository.GetCliente(clientId);
+            return new ClienteResponse();
+        }
+    }
+}
