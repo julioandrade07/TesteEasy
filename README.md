@@ -32,22 +32,25 @@ Projeto .net5.0
 ## Sobre o projeto
 
 Projeto de teste de conhecimento para criar uma api em .NET utilizando as melhores práticas de desenvolvimento, para resolver o 
-problema a seguir.
+problema a seguir: 
 
-Problema:
+```ruby
 Nossos usuários têm custodia em vários tipos de investimentos, que vem de serviços distintos, para
 isso devemos consolidar estes dados e devolver para canais diversos
+```
 
 ## Tecnologias implementadas:
 
 - ASP.NET 5.0 (with .NET Core 5.0)
- - ASP.NET MVC Core 
+- ASP.NET MVC Core 
 - Swagger UI with JWT support
+- Docker
+- Linux
 
 
 ## Architecture:
 
-Durante a analise do projeto 3 arquiteturas opçoes de arquitera me surgiram: 
+Durante a análise do projeto 3 opções de arquitera me surgiram: 
 
 + Clean architecture
 + Monolithic
