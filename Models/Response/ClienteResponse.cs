@@ -1,15 +1,13 @@
 ﻿using ApiClienteEasy.Models.Data;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ApiClienteEasy.Models.Response
 {
     public class ClienteResponse
     {
 
-        public ClienteResponse(ClientePosicao clientePosicao) {
+        public ClienteResponse(ClientePosicao clientePosicao)
+        {
 
             this.Investimentos = clientePosicao.Investimentos;
             this.ValorTotal = clientePosicao.ValorTotal;
@@ -19,7 +17,7 @@ namespace ApiClienteEasy.Models.Response
 
         public List<Investimento> Investimentos { get; set; }
 
-      
+
 
     }
 }

@@ -2,7 +2,6 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -10,7 +9,7 @@ namespace ApiClienteEasy.Services
 {
     public class FundosRepository : IFundos
     {
-    
+
 
         public async Task<List<Fundos>> GetFundos(int ClientId)
         {
@@ -31,7 +30,7 @@ namespace ApiClienteEasy.Services
 
                     return businessunits.fundos;
                 }
-                
+
             }
 
             return null;

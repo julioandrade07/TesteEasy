@@ -1,5 +1,4 @@
 ﻿using ApiClienteEasy.Models.Data;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -27,25 +26,25 @@ namespace ApiClienteEasy.Services
         public ClientePosicao GetCliente(int ClientId)
         {
 
-          List<Task> tasksManager = new List<Task>();
+            List<Task> tasksManager = new List<Task>();
 
-          Task<List<Fundos>> taskFundo =  _repositorioFundo.GetFundos(ClientId);
+            Task<List<Fundos>> taskFundo = _repositorioFundo.GetFundos(ClientId);
 
-          Task<List<TesouroDireto>> taskTeosuro =  _repositorioTesouroDireto.GetTesouro(ClientId);
+            Task<List<TesouroDireto>> taskTeosuro = _repositorioTesouroDireto.GetTesouro(ClientId);
 
-          Task<List<RendaFixa>> TaskRendaFixa =  _repositorioRendaFixa.GetRendaFixa(ClientId);
+            Task<List<RendaFixa>> TaskRendaFixa = _repositorioRendaFixa.GetRendaFixa(ClientId);
 
-          tasksManager.AddRange(new List<Task>() { taskFundo, taskTeosuro, TaskRendaFixa });
+            tasksManager.AddRange(new List<Task>() { taskFundo, taskTeosuro, TaskRendaFixa });
 
-          Task.WhenAll(tasksManager);
+            Task.WhenAll(tasksManager);
 
-          return GerarPosicaoCliente(taskFundo.Result, taskTeosuro.Result, TaskRendaFixa.Result);
-        
+            return GerarPosicaoCliente(taskFundo.Result, taskTeosuro.Result, TaskRendaFixa.Result);
+
         }
 
 
 
-        public ClientePosicao GerarPosicaoCliente (List<Fundos> fundos, List<TesouroDireto> tesouroDireto, List<RendaFixa> rendaFixa)
+        public ClientePosicao GerarPosicaoCliente(List<Fundos> fundos, List<TesouroDireto> tesouroDireto, List<RendaFixa> rendaFixa)
         {
 
             var ret = new ClientePosicao();

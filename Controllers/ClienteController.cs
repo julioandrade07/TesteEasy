@@ -1,17 +1,10 @@
-﻿using ApiClienteEasy.Models;
-using ApiClienteEasy.Models.Response;
+﻿using ApiClienteEasy.Models.Response;
 using ApiClienteEasy.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WebApi.OutputCache.V2;
 
 namespace WebApplication5.Controllers
 {
-
-
     [ApiController]
     [Route("[controller]")]
     public class ClienteController : ControllerBase
@@ -23,13 +16,14 @@ namespace WebApplication5.Controllers
         {
             _repository = repository;
             _repositoryFundos = repositoryFundos;
-        
+
         }
 
-        //[CacheOutput(ServerTimeSpan = 86400)]
+        [CacheOutput(ServerTimeSpan = 86400)]
         [HttpPost]
-        public ClienteResponse Consultar(int clientId) {
-            var item  =_repository.GetCliente(clientId);
+        public ClienteResponse Consultar(int clientId)
+        {
+            var item = _repository.GetCliente(clientId);
             return new ClienteResponse(item);
         }
     }
