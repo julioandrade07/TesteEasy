@@ -1,6 +1,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Projeto de API Cliente - EasyInvest
+# Projeto de API Cliente - Easynvest
 
 <details open="open">
   <summary>Sumario</summary>
